@@ -124,7 +124,7 @@ main{
   padding-top: 10px;
 }
 /* Styling the button inside the card*/
-button {
+.but {
   border: none;
   outline: 0;
   display: inline-block;
@@ -147,6 +147,15 @@ button {
   float: left;
   border-radius: 20px;
 }
+.cabut{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 .title2{
   color: rgb(78, 74, 74);
   font-size: 18px;
@@ -156,12 +165,78 @@ button {
 .subdivs{
   display:flex;
   padding: 30px;
-  padding-bottom: 90px;
+  /* padding-bottom: 20px; */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
 }
+#cui{
+  padding-bottom: 0;
+}
+.dis{
+  margin: 0 50px 10px 50px;
+  border-radius: 10px;
+}
+.displaytext{
+  padding:35px;
+  text-align: center;
+  font-size: 20px;
+}
+.bu{
+  text-align: center;
+}
+.disbut{
+  visibility: hidden;
+  font-size: 18px;
+  color: black;
+  background-color: red;
+  padding: 2px 24px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#faqs{
+  background-color: rgb(124, 170, 211);
+  font-size: 16.5px;
+  width: 700px;
+  margin: 0 auto;
+  border: 2px solid rgb(226, 87, 110);
+  padding: 15px 25px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.hed {
+  font-size: 150%;
+}
+.qs {
+  font-size: 120%;
+  padding: 1em 0 1em 55px;
+  cursor: pointer;
+  background: url(../images_mahendra/plus.png) no-repeat left center;
+}
+.qs.minus {
+  background: url(../images_mahendra/minus.png) no-repeat left center;
+}
+.links {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.links:focus,
+.links:hover {
+  color: rgb(143, 143, 66);
+}
+.ans {
+  display: none;
+  padding-left: 35px;
+}
+.ans.open {
+  display: block;
+}
+.par {
+  padding-bottom: 0.25em;
+  padding-left: 25px;
+}
+
 /* Aligning the footer content at center and giving background colour*/
 footer {
   text-align: center;
