@@ -20,15 +20,14 @@
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Places</a></li>
-                <li><a href="popular-cuisines.html">Food</a></li>
-                <li><a href="Groceries.html">Groceries</a></li>
+                <li><a href="#">Food</a></li>
                 <li><a href="#">Events</a></li>
                 <li></li>
-+            </ul>
+              </ul>
             </nav>
             <div id="profile">
-              <a href="login.html" class="navicons"><i class="fa-regular fa-user"></i></a>
-              <a href="login.html" class="navicons"><i class="fa-solid fa-right-from-bracket"></i></i></a>
+              <a href="#" class="navicons"><i class="fa-regular fa-user"></i></a>
+              <a href="#" class="navicons"><i class="fa-solid fa-right-from-bracket"></i></i></a>
             </div>
         </header>                 <!----Address, contact info and email on the left section-->
         <div class="container">
@@ -57,16 +56,16 @@
                     <p>If you have any queries related to food, places & recreation in Toronto, we are here for you.</p>
                     <form action="#">
                         <div class="input-box">
-                            <input type="text" placeholder="Enter your name">
+                            <input type="text" id="name" placeholder="Enter your name"><span class = "space">*</span>
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Enter your email">
+                            <input type="text" id="email" placeholder="Enter your email"><span class = "space">*</span>
                         </div>
                         <div class="input-box message-box">
-                            <input type="text" placeholder="Enter your message">
+                            <input type="text" id="comment" placeholder="Enter your message">
                         </div>
                         <div class="button">
-                            <input type="button" value="send now">
+                            <input type="button" value="send now" id="sendnow" onclick="validate()">
                         </div>
                     </form>
                 </div>
@@ -76,13 +75,13 @@
             <div id="footlist">
                 <div class="footdiv">
                     <p class="foothead">Learn More</p>
-                    <a href="History.html">History</a><br><br>
-                    <a href="Contact.html">Contact</a><br><br>
+                    <a href="">History</a><br><br>
+                    <a href="">Contact</a><br><br>
                 </div>
                 <div class="footdiv">
                     <p class="foothead">About Us</p>
                     <a href="">About</a><br><br>
-                    <a href="index_utsa.html">Marchandise</a><br><br>
+                    <a href="">Marchandise</a><br><br>
                 </div>
                 <div class="footdiv">
                     <p class="foothead">Follow Us</p>
@@ -98,5 +97,6 @@
                 </div>
             </div>
         </footer>
+        <script src="components_aashish/contact.js"></script>
     </body>
 </html>
