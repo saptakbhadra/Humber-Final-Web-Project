@@ -6,7 +6,7 @@
 }
 body {
   background-color: #c8d8e4;
-  background-image: url("/images/bgimage.jpg");
+  background-image: url("/images_mahendra/bgimage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -101,7 +101,7 @@ section {
 }
 /*Adding backgroung image for section 2*/
 #forminfo2{
-  background-image: url("/images/loginimg.jpg");
+  background-image: url("/images_mahendra/loginimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 20%;

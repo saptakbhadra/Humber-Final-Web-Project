@@ -85,8 +85,8 @@ class Header extends HTMLElement {
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Places</a></li>
-                <li><a href="popular-cuisines.html">Food</a></li>
-                <li><a href="Groceries.html">Groceries</a></li>
+                <li><a href="#">Food</a></li>
+                <!--<li><a href="Groceries.html">Groceries</a></li>-->
                 <li><a href="#">Events</a></li>
                 <li></li>
             </ul>
