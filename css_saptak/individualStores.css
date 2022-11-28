@@ -1,0 +1,178 @@
+html{
+  height: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+body{
+  display:flex; 
+  flex-direction:column; 
+  margin: 0px;
+  height: 100vh;
+  background: linear-gradient( to top, white 0%, rgb(72 139 81) 100%);
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  width:100%;
+}
+#logo{
+  margin-left: 20px;
+  width: auto;
+  height: 35px;
+} 
+nav{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#profile{
+  margin-right: 20px
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  padding: 22px 110px;
+  font-size: 18px;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+nav li:last-child{
+  float: right;
+}
+nav a:link {
+  color: orange;
+}
+nav a:visited {
+  color: white;
+}
+nav a:hover,
+nav a:focus {
+  color: rgb(0, 0, 255)
+}
+
+.navicons{
+  color: white;
+  padding: 10px
+}
+main{
+  margin-top: 130px;
+}
+
+/* Header and Navbar: Starts */
+.wrapper-header {
+  background-color: rgb(255, 222, 89);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logo{
+  width: 140px;
+}
+nav a{
+  margin-inline: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Header and Navbar: Ends */
+
+/* Content: Starts */
+
+.content{
+  text-align: center;
+}
+
+.headings{
+  text-align: center;
+}
+
+.store-image{
+  width: 795px;
+  height: 442px;
+  margin: 20px;
+  border: 6px #c7c7c7 solid;
+}
+
+.offer-button{
+  display: flex;
+  justify-content: center;
+  margin-block-end: 40px;
+}
+
+.offer-button li{
+  list-style-type: disc;
+  text-align: left;
+}
+
+.call-button{
+  border-radius: 100px;
+  padding: 10px 50px;
+  width: 250px;
+  background-color: #d23535;
+  font-weight: 700;
+  border: 2px #323232;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.call-button a{
+  color: #323232;
+  text-decoration: none;
+}
+/* Content: Ends */
+
+/* Footer: Starts */
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: auto;
+  width: 100%;
+}
+#footlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footdiv{
+  padding: 50px 100px;
+}
+.foothead{
+  padding-bottom: 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: orange;
+}
+#copyr{
+  clear: left;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid white;
+  font-size: 12px;
+}
+#copyr a{
+  text-decoration: underline;
+}
+/* Footer: Ends */

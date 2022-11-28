@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W2C !</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="images/favicon.ico"> <!--adding favicon-->
+    <link rel="stylesheet" href="css/reviews.css" /> <!--Linking external CSS file-->
+    <!-- Linking google font family - poppins -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!--adding script file for using font awesome icons-->
+    <script src="https://kit.fontawesome.com/2352d0bab2.js" crossorigin="anonymous"></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--Header with nav elements-->
+      <header-component></header-component>
+      <!--main content section-->
+      <main>
+        <!--User reviews in food and places category-->
+        <h2 class="userop">Our User Opinions</h2>
+        <!--Traverse to review form upon clicking post button-->
+        <section>
+          <div class="reviewbut">
+            <p><i class="fa-brands fa-canadian-maple-leaf" id="canic"></i>Guide customers with your reviews</p>
+            <button id="postbut"><i class="fa-solid fa-pen"></i>&nbsp;<a href="#forminfo">Post</a></button>
+          </div>
+        </section><br>
+        <h2 class="userop">Food Reviews</h2><br>
+        <section class="cardcont">
+          <!--Cards containing image and user review for food items-->
+          <div class="card">
+            <div class="cardimg">
+              <img src="/images/im1.jpg"/>
+            </div>
+            <div class="carddata">
+              <!--User name along with the location inside card-->
+              <p class="cardloc"><a href="#" class="carduser"><i class="fa-solid fa-user"></i>&nbsp;Alice </a>- Canoe | Toronto</p><br>
+              <p class="cardreview textin">
+                Such an incredible dining experience. Managed to get the best seat in the house in the corner by the windows and it added to the already fantastic food, service, and ambiance. 
+              </p>
+              <div class="cardinfo">
+                <!--Using font awesome icons for showing rating-->
+                <p class="textin">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="cardlike textin"><i id="likeic" class="fa-solid fa-thumbs-up"></i>&nbsp;&nbsp;Like</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardimg">
+              <img src="/images/im2.jpg"/>
+            </div>
+            <div class="carddata">
+              <p class="cardloc"><a href="#" class="carduser"><i class="fa-solid fa-user"></i>&nbsp;Kristy </a>- Tojo's | Vancouver</p><br>
+              <p class="cardreview textin">
+                The servers were very attentive and friendly and explained each dish to us in detail, including whether they would recommend soy sauce for the rolls or not. Food itself was very good.
+              </p>
+              <div class="cardinfo">
+                <p class="textin">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                </p>
+                <p class="cardlike textin"><i id="likeic" class="fa-solid fa-thumbs-up"></i>&nbsp;&nbsp;Like</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardimg">
+              <img src="/images/im3.jpg"/>
+            </div>
+            <div class="carddata">
+              <p class="cardloc"><a href="#" class="carduser"><i class="fa-solid fa-user"></i>&nbsp;Janet </a>- EIGHT | Calgary</p><br>
+              <p class="cardreview textin">
+                This is truly a great  place and we loved every bit of it. The foods we had were delicious, the taste says it all. The preparation and execution of every dish to cater their customers are amazing. 
+              </p>
+              <div class="cardinfo">
+                <p class="textin">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+                <p class="cardlike textin"><i id="likeic" class="fa-solid fa-thumbs-up"></i>&nbsp;&nbsp;Like</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <h2 class="userop">Place Reviews</h2><br>
+        <section class="slider">
+          <!--Slides contating image and user review along with icons for places-->
+          <div class="sliderev">
+            <div class="slideimg">
+              <img src="/images/im4.jpg" />
+            </div>
+            <div class="slidedata">
+              <div class="slideinfo">
+                <p class="slideloc"><a href="#" class="slideuser"><i class="fa-solid fa-user" id="usericon"></i>&nbsp;Cindy </a></p>
+                <p class="slideloc">Royal Ontario Museum</p>
+                <p class="slidetext">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div><br>
+              <p class="slidereview slidetext">
+                It is absolutely amazing, you can spend a whole day in the museum. It has different sections of historical ages from all over the world. You can see many things from different civilizations. I loved the geology part. You can find brilliant minerals and stones.
+              </p>
+              <div class="slideicons">
+                <i class="fa-solid fa-location-pin"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <i class="fa-solid fa-clock"></i>
+                <i class="fa-solid fa-heart slidelike"></i>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="sliderev">
+            <div class="slideimg">
+              <img src="/images/im5.jpg" />
+            </div>
+            <div class="slidedata">
+              <div class="slideinfo">
+                <p class="slideloc"><a href="#" class="slideuser"><i class="fa-solid fa-user" id="usericon"></i>&nbsp;Tracey </a></p>
+                <p class="slideloc">Granville Island</p>
+                <p class="slidetext">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div><br>
+              <p class="slidereview slidetext">
+                Grandville Island was definitely busier then usual. This place is really cool either way! so many shops and things to see, gravnville brewery, ocean concrete plant kinda a random place for it, there is a whole building for children with all sorts of toys and things. 
+              </p>
+              <div class="slideicons">
+                <i class="fa-solid fa-location-pin"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <i class="fa-solid fa-clock"></i>
+                <i class="fa-solid fa-heart slidelike"></i>
+              </div>
+              
+            </div>
+          </div>
+          
+        </section>
+
+        <section id="forminfo" >
+          <h1 id="mainh1">Login</h1>
+          <!--Creating login form using form tag elements-->
+          <div id="formid">
+            <form name="myform" action="index.html" method="get">
+                <label for="namep">Name:</label><br>
+                <input type="text" name="namep" id="namep" required><br><br>
+                <label for="place">Place:</label><br>
+                <input type="text" name="place" id="place" required><br><br>
+                <label for="comments">Comments:</label><br>
+                <textarea name="comments" id="comments" required></textarea><br><br>
+                <label for="rating">Rating (1-5):</label>
+                <input type="range" name="rating" id="rating" min="0" max="5" step="1"><br><br>
+                <label for="image">Attach an image:</label>
+                <input type="file" name="fileupload" accept="image/jpeg"><br>
+              <br>
+              <input type="submit" name="Submit" value="Submit" id="buttonstyle">
+            </form>
+          </div>
+        </section>
+        
+      </main>
+    
+      <!--adding footer with some links to redirect to various pages-->
+      <footer-component></footer-component>
+
+    </div>
+  </body>
+</html>

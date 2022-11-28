@@ -1,0 +1,417 @@
+/*Resetting padding and margin for all elements*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+body {
+  background-color: #c8d8e4;
+  /* background-image: url("/images/bgimage.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position:fixed;
+  width:100%;
+  top: 0;
+  border-bottom: 1px solid rgb(231, 225, 225);
+}
+/*Making logo float left on the header */
+#logo{
+  margin-left: 20px;
+  width: auto;
+  height: 35px;
+} 
+nav{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#profile{
+  margin-right: 20px
+}
+/* Displaying nav elements at the center*/
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  padding: 22px 110px;
+  font-size: 18px;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+li:last-child{
+  float: right;
+}
+nav a:link {
+  color: orange;
+}
+nav a:visited {
+  color: white;
+}
+/* Adding some selectors for anchor tag to style*/
+nav a:hover,
+nav a:focus {
+  color: rgb(0, 0, 255)
+}
+
+.navicons{
+  color: white;
+  padding: 10px
+}
+main{
+  /* display: flex; */
+  /* flex-direction:row; */
+  /* width: 90%; */
+  justify-content: center;
+  align-content: center;
+  margin: 140px auto 50px auto;
+}
+.userop{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+#mainh1{
+  color: #020659;
+  text-align: center;
+  margin: 10px 0;
+}
+section {
+  padding: 0px 30px; 
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+/*Using css flex box elements for aligning the text and button at ends of the div*/
+.reviewbut{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid grey;
+  
+}
+#canic{
+  color: red;
+  padding-right: 10px;
+  font-size: 28px;
+}
+/*Post review button in the review div*/
+#postbut{
+  background-color: rgb(59, 59, 240);
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+#postbut a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/*Uisng CSS grid box elements for aligning cards into rows and columns*/
+.cardcont {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-gap: 40px;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.card {
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+}
+.cardimg {
+  width: 100%;
+}
+/*Styling image inside card*/
+.cardimg img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.carddata {
+  padding: 20px;
+}
+.cardloc{
+  text-align: center;
+  color: white;
+}
+.carduser{
+  color: white;
+}
+.cardreview {
+  margin-bottom: 15px;
+}
+ .textin {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ecf0f1;
+  text-align: center;
+}
+/*Star rating alignment using flexbox properties*/
+.cardinfo {
+  display: flex;
+  align-self: end;
+  align-items: center;
+  padding: 0 10px;
+}
+.cardinfo i{
+  color: gold;
+}
+#likeic{
+  color: blue;
+}
+.cardlike {
+  margin-left: auto;
+  padding: 5px 20px;
+  background-color: #303032;
+  border-radius: 20px;
+}
+/*Style for slider section for place reviews*/
+.slider{
+  width: 80%;
+  margin: 0 auto;
+}
+/*Image styling inside slider class*/
+.slideimg img{
+  /* width: 100%;*/
+  height: 280px; 
+  padding: 20px;
+  border-radius: 10px;
+}
+/*Giving flex properties for the content inside slider class*/
+.sliderev{
+  display: flex;
+  flex-direction: row;
+  background-color: #39393b;
+  margin-bottom: 95px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.slidedata {
+  align-content: center;
+  padding: 0 40px;
+  margin: auto 0;
+}
+.slideloc{
+  text-align: center;
+  color: white;
+}
+#usericon{
+  color: white;
+}
+.slideuser{
+  color: white;
+}
+.slidereview {
+  margin-bottom: 15px;
+}
+ .slidetext {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ecf0f1;
+  text-align: center;
+}
+.slideinfo {
+  display: flex;
+  align-self: end;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+.slideinfo i{
+  color: gold;
+}
+/*Styling icons below the user review inside slider class*/
+.slideicons{
+text-align: center;
+padding-top: 10px;
+font-size: 20px;
+color: rgb(143, 143, 233);
+padding: 15px;
+}
+.slidelike {
+  color: red;
+}
+/*Aligning login form in the center using css flexbox elements*/
+#forminfo{
+  background-color: rgb(253, 253, 253);
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+#forminfo:hover{
+  border: 1px solid black;
+}
+#formid{
+  margin-top: 30px;
+  padding: 0 30px;
+}
+/*Adding backgroung image for section 2*/
+#forminfo2{
+  background-image: url("/images/loginimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  border: 1px solid white;
+}
+label{
+  padding-right: 10px;
+}
+/*Giving style to form inputs*/
+ input {
+  padding: 10px 18px;
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+#rating{
+  padding: 0px ;
+  width: 30%;
+  margin: 0px;
+}
+textarea{
+  width: 100%;
+  height: 80px;
+}
+/*Styling button*/
+#buttonstyle{
+  background-color: #52ab98;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+}
+#forpass{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom:20px;
+}
+#morelogin{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#morelogin p{
+  text-align: center;
+  margin: 10px 0;
+}
+#morelogin a{
+  padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+}
+/* Aligning the footer content at center and giving background colour*/
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
+}
+#footlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footdiv{
+  padding: 50px 100px;
+}
+.foothead{
+  padding-bottom: 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: orange;
+}
+/*style for copyright below footer*/
+#copyr{
+  clear: left;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid white;
+  font-size: 12px;
+}
+#copyr a{
+  text-decoration: underline;
+}
+/*Making webpage responsive for lower width devices*/
+@media only screen and (max-width: 980px) {
+  main {
+    width: 100%;
+    margin: 110px 0 0 0;
+   }
+   #forminfo{
+     width: 100%;
+   }
+   #forminfo2{
+     display: none
+   }
+ }
+ @media only screen and (max-width: 500px) {
+  .cardcont {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 24;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .card {
+    grid-column-end: span 6;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .sliderev{
+    display: flex;
+    flex-direction: column;
+    background-color: #39393b;
+    margin-bottom: 95px;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .slideimg{
+    margin: 0 auto;
+  }
+  .slideicons{
+    padding: 20px;
+  }
+}
+

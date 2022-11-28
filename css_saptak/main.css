@@ -1,0 +1,243 @@
+html{
+  height: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+body{
+  display:flex; 
+  flex-direction:column; 
+  margin: 0px;
+  height: 100vh;
+  background: linear-gradient( to top, white 0%, rgb(72 139 81) 100%);
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  width:100%;
+}
+#logo{
+  margin-left: 20px;
+  width: auto;
+  height: 35px;
+} 
+nav{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#profile{
+  margin-right: 20px
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  padding: 22px 110px;
+  font-size: 18px;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+li:last-child{
+  float: right;
+}
+nav a:link {
+  color: orange;
+}
+nav a:visited {
+  color: white;
+}
+nav a:hover,
+nav a:focus {
+  color: rgb(0, 0, 255)
+}
+
+.navicons{
+  color: white;
+  padding: 10px
+}
+main{
+  margin-top: 130px;
+}
+
+/* Header and Navbar: Starts */
+.wrapper-header {
+  background-color: rgb(255, 222, 89);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logo{
+  width: 140px;
+}
+nav a{
+  margin-inline: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Header and Navbar: Ends */
+
+
+/* Headings: Starts "Groceries" */
+.headings{
+  text-align: center;
+  letter-spacing: 0.8em;
+  color: #fff;
+}
+/* Headings: Ends "Groceries" */
+
+/* Listings of stores: Starts */
+.link-container{
+  text-decoration: none;
+}
+.item-holder-container{
+  margin: 8px;
+  border: 2px #b2b1ad solid;
+  display: flex;
+  background-color: blanchedalmond;
+}
+.store-image{
+  width: 250px;
+  height: 173px;
+  margin: 20px;
+  border: 6px #c7c7c7 solid;
+}
+.column h2{
+  font-size: 35px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-weight: 900;
+  color:#323232;
+}
+address{
+  font-weight: 900;
+}
+.call-button{
+  border-radius: 100px;
+  padding: 10px 50px;
+  margin-top: 40px;
+  background-color: #d0d2d3;
+  font-weight: 700;
+  border: 2px #323232;
+}
+
+.call-button a{
+  color: #323232;
+  text-decoration: none;
+}
+.store-availability-indicator{
+  display: flex;
+}
+
+.store-open-icon{
+  width: 22px;
+  height: 22px;
+  margin-top: 47px;
+  margin-left: 32px;
+}
+
+.store-closed-icon{
+  width: 22px;
+  height: 22px;
+  margin-top: 47px;
+  margin-left: 32px;
+}
+/* Listings of stores: Ends */
+
+/* Footer: Starts */
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: auto;
+  width: 100%;
+}
+#footlist{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+}
+.footdiv{
+  padding: 50px 100px;
+}
+.foothead{
+  padding-bottom: 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: orange;
+}
+#copyr{
+  clear: left;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid white;
+  font-size: 12px;
+}
+#copyr a{
+  text-decoration: underline;
+}
+/* Footer: Ends */
+
+/* FAQs Section: Starts*/
+
+.layout{
+  width: 600px;
+  margin: auto;
+}
+.question-holder{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*background: r;*/
+  /* border-radius: 10px; */
+  border: 2px solid black;
+}
+.question p{
+  margin: 5px;
+  padding: 0;
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(50, 50, 50);
+}
+/* .answer p{
+  margin: 5px;
+  padding: 10px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background: grey;
+  border-radius: 10px;
+} */
+.question-holder:hover{
+  cursor: pointer;
+}
+.answer {
+  display: none;
+}
+.question-holder.active .answer {
+  display: block;
+}
+/* FAQs Section: Ends */

@@ -1,0 +1,204 @@
+/*Resetting padding and margin for all elements*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+body {
+  background-color: #c8d8e4;
+}
+header {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position:fixed;
+  width:100%;
+  top: 0;
+  border-bottom: 1px solid rgb(231, 225, 225);
+}
+/*Making logo float left on the header */
+#logo{
+  margin-left: 20px;
+  width: auto;
+  height: 35px;
+} 
+nav{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#profile{
+  margin-right: 20px
+}
+/* Displaying nav elements at the center*/
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  padding: 22px 110px;
+  font-size: 18px;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+li:last-child{
+  float: right;
+}
+nav a:link {
+  color: orange;
+}
+nav a:visited {
+  color: white;
+}
+/* Adding some selectors for anchor tag to style*/
+nav a:hover,
+nav a:focus {
+  color: rgb(0, 0, 255)
+}
+
+.navicons{
+  color: white;
+  padding: 10px
+}
+main{
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+.maindivs{
+  border-bottom: 2px solid black;
+}
+/* Aligning the info in a card style and display it in flex mode*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  font-family: arial;
+  background-color: rgb(203, 224, 80);
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+/* Card style for section 2*/
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  font-family: arial;
+  background-color: rgb(236, 183, 85);
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 10px 0px;
+}
+.card2:hover {
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+}
+.card:hover {
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+}
+.mostimgs{
+  border-radius: 20px;
+}
+.headtitle{
+  padding-top: 10px;
+}
+/*Giving background colours to cards */
+#color2{
+  background-color: rgb(114, 143, 187);
+}
+#color3{
+  background-color: rgb(114, 143, 187);
+}
+.cardicons{
+  margin: 15px 0;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+  padding-top: 10px;
+}
+/* Styling the button inside the card*/
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.mainheads{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700px;
+  padding-bottom: 5px;
+}
+.imagesize{
+  float: left;
+  border-radius: 20px;
+}
+.title2{
+  color: rgb(78, 74, 74);
+  font-size: 18px;
+  float: left;
+  padding: 50px 20px;
+}
+.subdivs{
+  display:flex;
+  padding: 30px;
+  padding-bottom: 90px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+/* Aligning the footer content at center and giving background colour*/
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
+}
+#footlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footdiv{
+  padding: 50px 100px;
+}
+.foothead{
+  padding-bottom: 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: orange;
+}
+/*style for copyright below footer*/
+#copyr{
+  clear: left;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid white;
+  font-size: 12px;
+}
+#copyr a{
+  text-decoration: underline;
+}

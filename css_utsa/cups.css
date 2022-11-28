@@ -1,0 +1,214 @@
+header {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    /* position:fixed; */
+    width:100%;
+    top: 0;
+    border-bottom: 1px solid rgb(231, 225, 225);
+  }
+  body{
+    margin:0;
+  }
+  #logo{
+    margin-left: 20px;
+    width: auto;
+    height: 35px;
+  } 
+  nav{
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 22px 110px;
+    font-size: 18px;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+  }
+  li:last-child{
+    float: right;
+  }
+  nav a:link {
+    color: orange;
+  }
+  nav a:visited {
+    color: white;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: rgb(0, 0, 255)
+  }
+
+  
+  .navicons{
+    color: white;
+    padding: 10px
+  }
+  
+  footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0;
+  }
+  #footlist{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+  }
+  .footdiv{
+    padding: 50px 100px;
+  }
+  .foothead{
+    padding-bottom: 35px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  .foottail{
+    display: block;
+    padding-bottom: 1rem;
+  }
+  footer a:hover{
+    color: orange;
+  }
+  #copyr{
+    clear: left;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-top: 1px solid white;
+    font-size: 12px;
+  }
+  #copyr a{
+    text-decoration: underline;
+  }
+  
+  .catalogItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    margin: 1.5%;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .social i{
+    font-size: 2rem;
+    padding: 0 0.5rem;
+  }
+  .item img{
+    width:10rem;
+    height:10rem;
+  }
+  .item label{
+    font-size: 3rem;
+  }
+  .item button{
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius:9999px;
+    padding:0.5rem;
+    background-color: black;
+    color:white;
+
+  }
+  .item button:hover{
+    background-color: rgb(70, 62, 62);
+  }
+  @media only screen and (max-width: 480px) {
+
+    .item{
+      width:100%;
+      margin-top:1rem;
+      margin-bottom: 1rem;
+    }
+    nav ul{
+      display:flex;
+      flex-wrap: wrap;
+    }
+    nav ul li{
+      width:50%;
+      float: none;
+      padding: 0.5rem 0;
+    }
+    nav ul li a{
+      padding:0;
+    }
+    nav{
+      margin: 0;
+    }
+  
+    header{
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      top: auto;
+    }
+    header #profile a i{
+      font-size: 2rem;
+    }
+    #logo{
+      margin-left: 0;
+    }
+    #profile{
+      margin-right: 0;
+    }
+    footer{
+      bottom: auto;
+      
+    }
+    #footlist{
+      flex-direction: column;
+    }
+    .footdiv{
+      padding:0;
+    }
+    .foothead{
+      padding: 1rem 0 0 0;
+      /* padding-bottom: 0; */
+  
+    }
+    footer a{
+      display: block;
+      padding: 0.3rem 0 0.3rem 0;
+    }
+    .social{
+      display:inline;
+      padding: 0 1rem;
+      
+      
+    }
+    .social i {
+      font-size: 2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+  }

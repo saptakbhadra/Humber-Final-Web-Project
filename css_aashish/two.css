@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+  }
+  body {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.849)),url("../images/bgimage.jpg"); */
+    background-color: #c8d8e4;
+  }
+  header {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    width:100%;
+    top: 0;
+    border-bottom: 1px solid rgb(231, 225, 225);
+  }
+  /*  Logo css inside header  */
+  #logo{
+    margin-left: 20px;
+    width: auto;
+    height: 35px;
+  } 
+  /*  Navbar below the header along with various list elements  */
+  nav{
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #profile{
+    margin-right: 20px
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 22px 110px;
+    font-size: 18px;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+  }
+  li:last-child{
+    float: right;
+  }
+  /*Using various selector properties to style anchor tag elements*/
+  nav a:link {
+    color: orange;
+  }
+  nav a:visited {
+    color: white;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: rgb(0, 0, 255)
+  }
+  
+  .navicons{
+    color: white;
+    padding: 10px
+  }
+
+  /* Styling for the left side section*/
+
+  .container{
+    width: 100%;                    /*changed to 85*/
+    background: #fff;
+    border-radius: 6px;
+   /* padding: 90px 190px 20px 40px;*/
+    padding: 10px 50px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);    
+    margin-top: 108px;
+    margin-bottom:0px; 
+  }
+
+  .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    /*position: relative;*/
+  }
+  .content .left-side::before{
+    content: '';
+    /*position: absolute;*/
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+  }
+
+  /*  Styling for the right side section*/
+
+  .container .content .right-side{
+    width: 75%;
+    margin-left: 105px;
+  }
+  .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093; 
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 100px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 26px;
+  }
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+   .button input[type="button"]:hover{
+    background: #5029bc;
+  }
+
+  /*  Styling for footer  */
+
+  footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;  /*position: absolute;*/
+    bottom: 0;
+  }
+  #footlist{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+  }
+  .footdiv{
+    padding: 12px 100px;
+  }
+  .foothead{
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover{
+    color: orange;
+  }
+  #copyr{
+    clear: left;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-top: 1px solid white;
+    font-size: 12px;
+  }
+  #copyr a{
+    text-decoration: underline;
+  }
+/*   CSS for view with minimum width of 950px   */
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    /*margin: 40px 0;*/
+    height: 100%;
+    margin-top: 266px;
+    width: 80%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}

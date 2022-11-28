@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W2C !</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="images_mahendra/favicon.ico"> <!--adding favicon-->
+    <link rel="stylesheet" href="css_mahendra/login.css" /> <!--Linking external CSS file-->
+    <!-- Linking google font family - poppins -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!--adding script file for using font awesome icons-->
+    <script src="https://kit.fontawesome.com/2352d0bab2.js" crossorigin="anonymous"></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!--Header with nav elements-->
+      <header-component></header-component>
+      <!--main content section-->
+      <main>
+        <section id="forminfo" >
+          <h1>Login</h1>
+          <!--Creating login form using form tag elements-->
+          <div id="formid">
+            <form name="myform" action="index.html" method="get">
+                <label for="email">E-Mail:</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password" required><br>
+              <br>
+              <input type="submit" name="Submit" value="Submit" id="buttonstyle">
+            </form>
+            <p id="forpass">
+              <a href="#">Sign Up</a>
+              <a href="#">Forgot password?</a>
+            </p>
+            <hr>
+          </div>
+          <!--Adding font awesome icons for more login options-->
+          <div id="morelogin">
+            <p>Login Using</p>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </section>
+        <!--Second section containing an image-->
+        <section id="forminfo2">
+          
+        </section>
+      </main>
+    
+      <!--adding footer with some links to redirect to various pages-->
+      <footer-component></footer-component>
+
+    </div>
+  </body>
+</html>

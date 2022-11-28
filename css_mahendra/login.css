@@ -1,0 +1,197 @@
+/*Resetting padding and margin for all elements*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+body {
+  background-color: #c8d8e4;
+  background-image: url("/images/bgimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position:fixed;
+  width:100%;
+  top: 0;
+  border-bottom: 1px solid rgb(231, 225, 225);
+}
+/*Making logo float left on the header */
+#logo{
+  margin-left: 20px;
+  width: auto;
+  height: 35px;
+} 
+nav{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#profile{
+  margin-right: 20px
+}
+/* Displaying nav elements at the center*/
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  padding: 22px 110px;
+  font-size: 18px;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+li:last-child{
+  float: right;
+}
+nav a:link {
+  color: orange;
+}
+nav a:visited {
+  color: white;
+}
+/* Adding some selectors for anchor tag to style*/
+nav a:hover,
+nav a:focus {
+  color: rgb(0, 0, 255)
+}
+
+.navicons{
+  color: white;
+  padding: 10px
+}
+/*Aligning login form in the center using css flexbox elements*/
+main{
+  display: flex;
+  flex-direction:row;
+  width: 70%;
+  justify-content: center;
+  align-content: center;
+  margin: 140px auto 50px auto;
+}
+
+main h1{
+  color: #020659;
+  text-align: center;
+  margin: 20px 0;
+}
+section {
+  padding: 0px 30px; 
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+#forminfo{
+  background-color: white;
+  width: 40%;
+}
+#formid{
+  margin-top: 30px;
+  padding: 0 30px;
+}
+/*Adding backgroung image for section 2*/
+#forminfo2{
+  background-image: url("/images/loginimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  border: 1px solid white;
+}
+/*Giving style to form inputs*/
+ input {
+  padding: 10px 18px;
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+/*Styling button*/
+#buttonstyle{
+  background-color: #52ab98;
+  border-radius: 10px;
+  color: white;
+}
+#forpass{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom:20px;
+}
+#morelogin{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#morelogin p{
+  text-align: center;
+  margin: 10px 0;
+}
+#morelogin a{
+  padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+}
+/* Aligning the footer content at center and giving background colour*/
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
+}
+#footlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footdiv{
+  padding: 50px 100px;
+}
+.foothead{
+  padding-bottom: 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: orange;
+}
+/*style for copyright below footer*/
+#copyr{
+  clear: left;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid white;
+  font-size: 12px;
+}
+#copyr a{
+  text-decoration: underline;
+}
+/*Making form responsive for lower width devices*/
+@media only screen and (max-width: 980px) {
+  main {
+    width: 100%;
+    margin: 110px 0 0 0;
+   }
+   #forminfo{
+     width: 100%;
+   }
+   #forminfo2{
+     display: none
+   }
+ }
