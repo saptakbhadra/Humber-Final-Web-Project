@@ -3,7 +3,7 @@
   <head>
     <title>W2C !</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images_mahendra/favicon.ico"> <!--adding favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico"> <!--adding favicon-->
     <link rel="stylesheet" href="css_mahendra/login.css" /> <!--Linking external CSS file-->
     <!-- Linking google font family - poppins -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -22,13 +22,15 @@
           <h1>Login</h1>
           <!--Creating login form using form tag elements-->
           <div id="formid">
-            <form name="myform" action="index.html" method="get">
+            <form name="myform" method="get">
                 <label for="email">E-Mail:</label><br>
-                <input type="email" name="email" id="email" required><br><br>
+                <input type="text" name="email" id="email">
+                <span class="sib"></span><br><br>
                 <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" required><br>
+                <input type="password" name="password" id="password">
+                <span></span><br>
               <br>
-              <input type="submit" name="Submit" value="Submit" id="buttonstyle">
+              <input type="button"  value="Submit" id="buttonstyle">
             </form>
             <p id="forpass">
               <a href="#">Sign Up</a>
@@ -54,5 +56,6 @@
       <footer-component></footer-component>
 
     </div>
+    <script src="components_mahendra/login.js"></script>
   </body>
 </html>
