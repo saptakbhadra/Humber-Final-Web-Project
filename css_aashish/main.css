@@ -1,92 +1,235 @@
 *{
-  padding: 0;
-  margin: 0;
-  font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+  }
+  body {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.849)),url("../images/bgimage.jpg"); */
+    background-color: white;
+  
+  }
+  header {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width:100%;
+    top: 0;
+    border-bottom: 1px solid rgb(231, 225, 225);
+  }
+  /*  Logo css inside header  */
+  #logo{
+    margin-left: 20px;
+    width: auto;
+    height: 35px;
+  } 
+  /*  Navbar below the header along with various list elements  */
+  nav{
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #profile{
+    margin-right: 30px
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 22px 110px;
+    font-size: 18px;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+  }
+  li:last-child{
+    float: right;
+  }
+#headertwo{
+    text-align: center;
+    background-color: blue;
+    display: flex;
+    
 }
-body {
-  /* background: linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.849)),url("../images/bgimage.jpg"); */
-  background-color: #c8d8e4;
-}
-header {
+  /*Using various selector properties to style anchor tag elements*/
+  nav a:link {
+    color: orange;
+  }
+  nav a:visited {
+    color: white;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: rgb(0, 0, 255)
+  }
+  
+  .navicons{
+    color: white;
+    padding: 10px
+  }
+
+/* styling the team icons*/
+#two{
   text-align: center;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  position:fixed;
-  width:100%;
-  top: 0;
-  border-bottom: 1px solid rgb(231, 225, 225);
+  padding-top: 20px;
+  color:#444;
+  font-size: 20px;
+  margin:auto;
+  line-height: 50px;
+
 }
-#logo{
-  margin-left: 20px;
-  width: auto;
-  height: 35px;
-} 
-nav{
+.team{
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 50%;
 }
 
-#profile{
-  margin-right: 20px
+.sub-container{
+  margin: auto;
+  padding: 48px;
+  display:flex;
+  flex: 1 1 200px;
+  flex-wrap:wrap;
+  justify-content: center;
 }
-ul {
-  list-style-type: none;
-  text-align: center;
-  display: inline-block;
-  padding: 22px 110px;
-  font-size: 18px;
+.team:hover{
+  background: #ddd;
+  border:12px;
 }
-li {
-  float: left;
+.team img{
+  width:100px;
+  height:100px;
 }
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px 30px;
+
+.name{
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.designation{
+  font-style: italic;
+  color:#888;
+}
+
+.about{
+  margin:20px 0;
+  font-weight: lighter;
+  color:#4e4e4e;
+}
+/*Styling the social media links*/
+.links{
+  margin: 14px;
+}
+
+.links a{
+  display:inline-block;
+  height:30px;
+  width:30px;
+  transition: .4s;
+}
+.links a i{
+  color:#444;
+
+}
+/*-----------------------------------------------------------------------*/
+
+
+.question {
+  font-size: 150%;
+}
+h2 {
+  font-size: 120%;
+  padding: 0.25em 0 0.25em 25px;
+  cursor: pointer;
+  background: url(../images_aashish/plus.png) no-repeat left center;
+}
+h2.minus {
+  background: url(../images_aashish/minus.png) no-repeat left center;
+}
+a {
+  color: black;
   text-decoration: none;
 }
-li:last-child{
-  float: right;
+a:focus,
+a:hover {
+  color: blue;
 }
-nav a:link {
-  color: orange;
+#faqs{
+  padding-left: 10px;
 }
-nav a:visited {
-  color: white;
-}
-nav a:hover,
-nav a:focus {
-  color: rgb(0, 0, 255)
+.w2c{
+  font-size: 120%;
+  padding: 1em 0 1em 55px;
+  cursor: pointer;
+  background: url(../images_aashish/plus.png) no-repeat left center;
 }
 
-.navicons{
-  color: white;
-  padding: 10px
+.w2c.minus {
+  background: url(../images_aashish/minus.png) no-repeat left center;
 }
-main{
-  margin-top: 130px;
+.links {
+ color: rgb(0, 0, 0);
+ text-decoration: none;
 }
+.links:focus,
+.links:hover {
+ color: rgb(143, 143, 66);
+}
+
+.reason{
+  display: none;
+  padding-left: 35px;
+
+}
+.reason.open {
+  display: block;
+}
+
+
+div.open {
+  display: block;
+}
+.js{
+  padding-left: 30px;
+  align-self:stretch;
+}
+#jsli{
+  padding-right: 58px;
+}
+p {
+  padding-bottom: 0.25em;
+  padding-left: 25px;
+}
+
+/*  Styling for footer  */
+
 footer {
   text-align: center;
   background-color: black;
   color: white;
-  position: absolute;
-  width: 100%;
+  width: 100%; 
   bottom: 0;
+  padding-bottom: 0px;
 }
 #footlist{
   display: flex;
   flex-direction: row;
-  
   justify-content: center;
 }
 .footdiv{
-  padding: 50px 100px;
+  padding: 12px 100px;
 }
 .foothead{
-  padding-bottom: 35px;
+  padding-bottom: 5px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -96,7 +239,7 @@ footer a{
 }
 footer a:hover{
   color: orange;
-} 
+}
 #copyr{
   clear: left;
   padding-top: 20px;
@@ -107,3 +250,15 @@ footer a:hover{
 #copyr a{
   text-decoration: underline;
 }
+/*   CSS for view with minimum width of 600px   */
+@media screen and (max-width:600px) {
+  .team{
+    width: 500%;
+    padding:30px 10px;
+  }
+  .sub-container{
+    padding:0px;
+  }
+}
+
+
