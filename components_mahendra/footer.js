@@ -50,18 +50,20 @@ class Footer extends HTMLElement {
             <div id="footlist">
                 <div class="footdiv">
                     <p class="foothead">Learn More</p>
-                    <a href="History.html">History</a><br><br>
-                    <a href="Contact.html">Contact</a><br><br>
+                    <a href="../History.html">History</a><br><br>
+                    <a href="../Groceries.html">Groceries</a><br><br>
+                    <a href="../index_utsa.html">Merchandise</a><br><br>
                 </div>
                 <div class="footdiv">
                     <p class="foothead">About Us</p>
-                    <a href="">About</a><br><br>
-                    <a href="index_utsa.html">Marchandise</a><br><br>
+                    <a href="../team_aashish.html">Team</a><br><br>
+                    <a href="../Contact.html">Contact</a><br><br>
+                    <a href="../reviews_mahendra.html">Reviews</a><br><br>
                 </div>
                 <div class="footdiv"> 
                     <p class="foothead">Follow Us</p>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a><br><br>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a><br><br>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a><br><br>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a><br><br>
                 </div>
             </div>
             <!--copy right at the end of footer-->
