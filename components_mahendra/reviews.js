@@ -76,21 +76,13 @@ let slideNum=1;
     function nextSlide(n) {
     show(slideNum += n);
     }
-    function present(n) {
-    show(slideNum = n);
-    }
     function show(n) {
     let i;
     let nSlide = document.getElementsByClassName("sliderev");
-    let tSlide = document.getElementsByClassName("dot");
     if (n > nSlide.length) {slideNum = 1}    
     if (n < 1) {slideNum = nSlide.length}
     for (i = 0; i < nSlide.length; i++) {
         nSlide[i].style.display = "none";  
     }
-    for (i = 0; i < tSlide.length; i++) {
-        tSlide[i].className = tSlide[i].className.replace(" active", "");
-    }
     nSlide[slideNum-1].style.display = "flex";  
-    tSlide[slideNum-1].className += " active";
     }
