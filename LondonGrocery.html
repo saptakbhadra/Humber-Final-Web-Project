@@ -35,17 +35,42 @@
     </div>
     <img src="./images_saptak/LondonGroceryStore.jpg" class="store-image" alt="London-Grocery-Store-image">
 
-  <div class="offer-button">
-    <ul>
-      <li>Special discounts for Students</li>
-      <li>Fresh Stock Everyday</li>
-      <li>Weekly Offers</li>
-      <li>Savings on every item</li>
-    </ul>
+    <div class="offer-button">
+      <ul>
+        <li>Special discounts for Students</li>
+        <li>Fresh Stock Everyday</li>
+        <li>Weekly Offers</li>
+        <li>Savings on every item</li>
+      </ul>
 
-    <button class="call-button"><a href="tel:153463456">Call Us To Order</a></button>
+      <button class="call-button"><a href="tel:153463456">Call Us To Order</a></button>
+    </div>
+    <!-- Contact Form -->
+    <div class="form-container">
+      <h1>Contact Form</h1>
+      <form name="contactForm" method="post" onsubmit="return validate()" action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <span class="errors"></span><br>
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email address" id="email" name="email">
+        <span class="errors"></span><br>
+
+        <label for="phone">Phone</label>
+        <input type="text" placeholder="Phone number" id="phone" name="phone">
+        <span class="errors"></span><br>
+
+        <label for="subject">Message</label>
+        <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+        <span class="errors"></span><br>
+
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+      <script src="./components_saptak/form.js"></script>
+    </div>
+
   </div>
-
   </div>
 
 
