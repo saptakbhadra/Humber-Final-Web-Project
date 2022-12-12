@@ -9,8 +9,8 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <!--adding script file for using font awesome icons-->
     <script src="https://kit.fontawesome.com/2352d0bab2.js" crossorigin="anonymous"></script>
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components_mahendra/header.js" type="text/javascript" defer></script>
+    <script src="components_mahendra/footer.js" type="text/javascript" defer></script>
   </head>
   <body>
     <div id="wrapper">
@@ -22,13 +22,15 @@
           <h1>Login</h1>
           <!--Creating login form using form tag elements-->
           <div id="formid">
-            <form name="myform" action="index.html" method="get">
+            <form name="myform" method="get">
                 <label for="email">E-Mail:</label><br>
-                <input type="email" name="email" id="email" required><br><br>
+                <input type="text" name="email" id="email">
+                <span class="sib"></span><br><br>
                 <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" required><br>
+                <input type="password" name="password" id="password">
+                <span></span><br>
               <br>
-              <input type="submit" name="Submit" value="Submit" id="buttonstyle">
+              <input type="button"  value="Submit" id="buttonstyle">
             </form>
             <p id="forpass">
               <a href="#">Sign Up</a>
@@ -54,5 +56,6 @@
       <footer-component></footer-component>
 
     </div>
+    <script src="components_mahendra/login.js"></script>
   </body>
 </html>

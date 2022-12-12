@@ -3,7 +3,7 @@
   <head>
     <title>W2C !</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/favicon.ico"> <!--adding favicon-->
+    <link rel="shortcut icon" href="images_mahendra/favicon.ico"> <!--adding favicon-->
     <link rel="stylesheet" href="css_mahendra/popular-cuisines.css" /> <!--Linking external CSS file-->
     <!-- Linking google font family - poppins -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/2352d0bab2.js" crossorigin="anonymous"></script>
     <script src="components_mahendra/header.js" type="text/javascript" defer></script>
     <script src="components_mahendra/footer.js" type="text/javascript" defer></script>
+    <script src="components_mahendra/popular-cuisines.js"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -34,7 +35,7 @@
               <a href="#"><i class="fa-solid fa-bowl-food"></i></i></a> 
             </div>
             <p>
-              <button><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
+              <button class="but"><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
             </p>
           </div>
 
@@ -48,7 +49,7 @@
               <a href="#"><i class="fa-solid fa-bowl-food"></i></i></a> 
             </div>
             <p>
-              <button><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
+              <button class="but"><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
             </p>
           </div>
 
@@ -62,7 +63,7 @@
               <a href="#"><i class="fa-solid fa-bowl-food"></i></i></a> 
             </div>
             <p>
-              <button><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
+              <button class="but"><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
             </p>
           </div>
 
@@ -76,7 +77,7 @@
               <a href="#"><i class="fa-solid fa-bowl-food"></i></i></a> 
             </div>
             <p>
-              <button><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
+              <button class="but"><i class="fa-solid fa-utensils"></i>&nbsp; Menu</button>
             </p>
           </div>
           
@@ -87,30 +88,70 @@
           <p class="mainheads">Must Try</p>
         </div>
 
-        <div class="subdivs">
+        <div class="subdivs" id="cui">
           <!--adding cards to display popular cuisines thar are available-->
           <div class="card2">
             <img src="images_mahendra/c1.jpg" alt="cuisine" class="imagesize" width="130px" height="130px">
+            <button class="cabut" onclick="canadaCu()">
             <p class="title2">Canadian cuisine</p>
+            </button>
           </div>
           <div class="card2">
             <img src="images_mahendra/c2.jpg" alt="cuisine" class="imagesize" width="130px" height="130px">
+            <button class="cabut" onclick="indiaCu()">
             <p class="title2">Indian cuisine</p>
+            </button>
           </div>
           <div class="card2">
             <img src="images_mahendra/c3.jpg" alt="cuisine" class="imagesize" width="130px" height="130px">
+            <button class="cabut" onclick="iranianCu()">
             <p class="title2">Iranian cuisine</p>
+            </button>
           </div>
           <div class="card2">
             <img src="images_mahendra/c4.jpg" alt="cuisine" class="imagesize" width="130px" height="130px">
+            <button class="cabut" onclick="koreanCu()">
             <p class="title2">Korean cuisine</p>
+            </button>
           </div>
-          
+        </div>
+        <div class="dis">
+          <div class="displaytext">
+          </div>
+          <div class="bu">
+            <button class="disbut" onclick="closeFun()">close</button>
+          </div>
+        </div>
+
+        <!--Must try section-->
+        <div class="maindivs">
+          <p class="mainheads">Know More</p>
+        </div>
         
+        <div id="faqs">
+          <h2 class="qs"><a href="#" class="links">Wanted to know the most famous food in Canada?</a></h2>
+          <div class="ans">
+            <p class="par">
+              You'll find poutine on most Canadian menus, but its real home is in Quebec. The savory dish combines fries, cheese, and gravy.
+            </p>
+          </div>
+          <h2 class="qs"><a href="#" class="links">What is the most eaten meat in Canada?</a></h2>
+          <div class="ans">
+            <p id="aa" class="par">Chicken is Canada’s #1 meat protein. The average Canadian eats more than 31kg of chicken each year.</p>
+          </div>
+          <h2 class="qs"><a href="#" class="links">What is Canada's typical food?</a></h2>
+          <div class="ans">
+            <p class="par">
+              Foods such as bannock, moose, deer, bison, pemmican, maple taffy, and Métis stews, such as barley stew, are all either traditional Indigenous foods, or originate from Canada with roots in Indigenous cuisines, and are eaten throughout the country.
+            </p>
+          </div>
+        </div>
+
       </main>
       <!--adding footer with some links to redirect to various pages-->
       <footer-component></footer-component>
 
     </div>
+    
   </body>
 </html>

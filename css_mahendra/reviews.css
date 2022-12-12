@@ -204,11 +204,25 @@ section {
   border-radius: 10px;
 }
 /*Giving flex properties for the content inside slider class*/
+/* Next & previous buttons */
+#slidearrows{
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: 45px;
+}
+.prev, .next {
+  cursor: pointer;
+  padding: 15px;
+  margin: 0 15px;
+  color: white;
+  background-color: grey;
+  border-radius: 15px;
+}
 .sliderev{
   display: flex;
   flex-direction: row;
   background-color: #39393b;
-  margin-bottom: 95px;
+  margin-bottom: 45px;
   border: 1px solid white;
   border-radius: 10px;
 }
@@ -259,6 +273,16 @@ padding: 15px;
   color: red;
 }
 /*Aligning login form in the center using css flexbox elements*/
+#formclose{
+  color: red;
+  background: none;
+	border: none;
+	padding: 0px 30px;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 23px;
+  float: right;
+}
 #forminfo{
   background-color: rgb(253, 253, 253);
   width: 80%;
@@ -275,7 +299,7 @@ padding: 15px;
 }
 /*Adding backgroung image for section 2*/
 #forminfo2{
-  background-image: url("/images/loginimg.jpg");
+  background-image: url("/images_mahendra/loginimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 20%;

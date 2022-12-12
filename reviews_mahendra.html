@@ -3,14 +3,14 @@
   <head>
     <title>W2C !</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/favicon.ico"> <!--adding favicon-->
-    <link rel="stylesheet" href="css/reviews.css" /> <!--Linking external CSS file-->
+    <link rel="shortcut icon" href="images_mahendra/favicon.ico"> <!--adding favicon-->
+    <link rel="stylesheet" href="css_mahendra/reviews.css" /> <!--Linking external CSS file-->
     <!-- Linking google font family - poppins -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <!--adding script file for using font awesome icons-->
     <script src="https://kit.fontawesome.com/2352d0bab2.js" crossorigin="anonymous"></script>
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components_mahendra/header.js" type="text/javascript" defer></script>
+    <script src="components_mahendra/footer.js" type="text/javascript" defer></script>
   </head>
   <body>
     <div id="wrapper">
@@ -24,15 +24,40 @@
         <section>
           <div class="reviewbut">
             <p><i class="fa-brands fa-canadian-maple-leaf" id="canic"></i>Guide customers with your reviews</p>
-            <button id="postbut"><i class="fa-solid fa-pen"></i>&nbsp;<a href="#forminfo">Post</a></button>
+            <button id="postbut"><i class="fa-solid fa-pen"></i>&nbsp;<a href="#">Post</a></button>
           </div>
         </section><br>
+        <section id="forminfo">
+          <h1 id="mainh1">Login<button id="formclose"><i class="fa-solid fa-xmark"></i></button></h1>
+          
+          <!--Creating login form using form tag elements-->
+          <div id="formid">
+            <form name="myform" id="reviewform">
+                <label for="namep">Name:</label><br>
+                <input type="text" name="namep" id="namep"><br>
+                <span class="status1"></span><br>
+                <label for="place">Place:</label><br>
+                <input type="text" name="place" id="place"><br>
+                <span class="status2"></span><br>
+                <label for="comments">Comments:</label><br>
+                <textarea name="comments" id="comments"></textarea><br>
+                <span class="status3"></span><br>
+                <label for="rating">Rating (1-5):</label>
+                <input type="range" name="rating" id="rating" min="0" max="5" step="1"><br><br>
+                <label for="image">Attach an image:</label>
+                <input type="file" name="fileupload" accept="image/jpeg" id="fileup"><br>
+              <br>
+              <input type="button" name="Submit" value="Submit" id="buttonstyle">
+            </form>
+          </div>
+        </section><br>
+
         <h2 class="userop">Food Reviews</h2><br>
         <section class="cardcont">
           <!--Cards containing image and user review for food items-->
           <div class="card">
             <div class="cardimg">
-              <img src="/images/im1.jpg"/>
+              <img src="/images_mahendra/im1.jpg" id="/images_mahendra/im3.jpg"/>
             </div>
             <div class="carddata">
               <!--User name along with the location inside card-->
@@ -56,7 +81,7 @@
 
           <div class="card">
             <div class="cardimg">
-              <img src="/images/im2.jpg"/>
+              <img src="/images_mahendra/im2.jpg" id="/images_mahendra/im1.jpg"/>
             </div>
             <div class="carddata">
               <p class="cardloc"><a href="#" class="carduser"><i class="fa-solid fa-user"></i>&nbsp;Kristy </a>- Tojo's | Vancouver</p><br>
@@ -77,7 +102,7 @@
 
           <div class="card">
             <div class="cardimg">
-              <img src="/images/im3.jpg"/>
+              <img src="/images_mahendra/im3.jpg" id="/images_mahendra/im2.jpg"/>
             </div>
             <div class="carddata">
               <p class="cardloc"><a href="#" class="carduser"><i class="fa-solid fa-user"></i>&nbsp;Janet </a>- EIGHT | Calgary</p><br>
@@ -99,10 +124,10 @@
         </section>
         <h2 class="userop">Place Reviews</h2><br>
         <section class="slider">
-          <!--Slides contating image and user review along with icons for places-->
+          <!--nSlide contating image and user review along with icons for places-->
           <div class="sliderev">
             <div class="slideimg">
-              <img src="/images/im4.jpg" />
+              <img src="/images_mahendra/im4.jpg" />
             </div>
             <div class="slidedata">
               <div class="slideinfo">
@@ -130,7 +155,7 @@
 
           <div class="sliderev">
             <div class="slideimg">
-              <img src="/images/im5.jpg" />
+              <img src="/images_mahendra/im5.jpg" />
             </div>
             <div class="slidedata">
               <div class="slideinfo">
@@ -156,35 +181,19 @@
               
             </div>
           </div>
+          <div id="slidearrows">
+          <a class="prev" onclick="nextSlide(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+          <a class="next" onclick="nextSlide(1)"><i class="fa-solid fa-chevron-right"></i></a>
+          </div>
           
         </section>
 
-        <section id="forminfo" >
-          <h1 id="mainh1">Login</h1>
-          <!--Creating login form using form tag elements-->
-          <div id="formid">
-            <form name="myform" action="index.html" method="get">
-                <label for="namep">Name:</label><br>
-                <input type="text" name="namep" id="namep" required><br><br>
-                <label for="place">Place:</label><br>
-                <input type="text" name="place" id="place" required><br><br>
-                <label for="comments">Comments:</label><br>
-                <textarea name="comments" id="comments" required></textarea><br><br>
-                <label for="rating">Rating (1-5):</label>
-                <input type="range" name="rating" id="rating" min="0" max="5" step="1"><br><br>
-                <label for="image">Attach an image:</label>
-                <input type="file" name="fileupload" accept="image/jpeg"><br>
-              <br>
-              <input type="submit" name="Submit" value="Submit" id="buttonstyle">
-            </form>
-          </div>
-        </section>
-        
       </main>
     
       <!--adding footer with some links to redirect to various pages-->
       <footer-component></footer-component>
-
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="components_mahendra/reviews.js"></script>
     </div>
   </body>
 </html>
