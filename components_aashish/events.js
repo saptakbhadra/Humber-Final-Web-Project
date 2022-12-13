@@ -1,9 +1,6 @@
-$("#flip").click(function(){
-    $("#panel").hide();
-    console.log("Hi");
-  });
-  
-  $("#flip").click(function(){
-    $("#panel").show();
-    console.log("hi");
-  });
+const checkBox = document.getElementById("chkBox");
+
+checkBox.addEventListener('change', () => {
+    //change the theme
+    document.body.classList.toggle('dark');
+})
