@@ -80,21 +80,21 @@ class Header extends HTMLElement {
             }
         </style>
         <header>
-            <a href="/index.html"><img src="images_mahendra/logo.png" alt="logo" id="logo" /></a>
+            <a href="../landmarks.html"><img src="images_mahendra/logo.png" alt="logo" id="logo" /></a>
             <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Food</a></li>
+                <li><a href="../landmarks.html">Travel</a></li>
+                <li><a href="../placestogo.html">Places</a></li>
+                <li><a href="../popular-cuisines_mahendra.html">Food</a></li>
                 <!--<li><a href="Groceries.html">Groceries</a></li>-->
-                <li><a href="#">Events</a></li>
+                <li><a href="../events.html">Events</a></li>
                 <li></li>
             </ul>
             </nav>
             <!--adding profile and logoff icons at the right side of header-->
             <div id="profile">
-            <a href="login.html" class="navicons"><i class="fa-regular fa-user"></i></a>
-            <a href="login.html" class="navicons"><i class="fa-solid fa-right-from-bracket"></i></i></a>
+            <a href="../login_mahendra.html" class="navicons"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="navicons"><i class="fa-solid fa-right-from-bracket"></i></i></a>
             </div>
         </header>
       `;
