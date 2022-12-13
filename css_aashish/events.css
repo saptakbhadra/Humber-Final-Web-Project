@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+  }
+  body {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.849)),url("../images/bgimage.jpg"); */
+    background-color: white;
+  
+  }
+  header {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width:100%;
+    top: 0;
+    border-bottom: 1px solid rgb(231, 225, 225);
+  }
+  /*  Logo css inside header  */
+  #logo{
+    margin-left: 20px;
+    width: auto;
+    height: 35px;
+  } 
+  /*  Navbar below the header along with various list elements  */
+  nav{
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #profile{
+    margin-right: 30px
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    padding: 22px 110px;
+    font-size: 18px;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+  }
+  li:last-child{
+    float: right;
+  }
+  /*Using various selector properties to style anchor tag elements*/
+  nav a:link {
+    color: orange;
+  }
+  nav a:visited {
+    color: white;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: rgb(0, 0, 255)
+  }
+  
+  .navicons{
+    color: white;
+    padding: 10px
+  }
+
+  /*Styling for the section containing pictures/places*/
+#Toronto{
+  padding-left: 10px;
+}
+  .frame{
+    width: 100%;
+    height: 98%;
+    display: grid;
+    grid-template-rows: repeat(50, 2%);
+    grid-template-columns: repeat(50, 2%);
+    
+}
+.frame img{
+    max-width: 100%;
+    height: auto;
+}
+.frame div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.frame div a{
+    background-color: rgba(44, 44, 44, 0);
+    transition: ease-out 0.5s;
+    width: 100%;
+    height: 100%;
+}
+.frame div a:hover{
+    background-color: rgba(44, 44, 44, 0.603);
+}
+h1{
+    grid-area: 1 / 1 / 7 / 30;
+    margin: 2% 0;
+}
+h1{
+    display: inline;
+    border: none;
+}
+h2{
+    margin-bottom: 3%;
+    color: #FFFF;
+}
+.img-1{
+    grid-area: 7 / 1 / 33 / 18;
+    background: url("../images_aashish/img-1.jpeg");
+}
+.img-2{
+    grid-area: 7 / 18 / 25 / 30;
+    background: url("../images_aashish/img-2.jpeg");
+    background-position-x: center;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    font-size: 0.9em;
+}
+.img-3{
+    grid-area: 25 / 18 / 51 / 30;
+    background: url("../images_aashish/img-3.jpeg");
+    background-position-y: 10%;
+}
+.img-4{
+    grid-area: 33 / 1 / 51 / 18;
+    background: url("../images_aashish/img-4.jpeg"); 
+    background-position-x: 40%;
+    background-position-y: 60%;
+}
+.img-5{
+    grid-area: 7 / 40 / 23 / 51;
+    background: url("../images_aashish/img-5.jpeg");
+    background-position-x: 50%;
+    background-position-y: 40%;
+}
+.img-6{
+    grid-area: 23 / 40 / 38 / 68;
+    background: url("../images_aashish/img-6.jpeg");
+    background-position-x: 20%;
+    background-position-y: 85%;
+}
+.img-7{
+    grid-area: 38 / 40 / 51 / 51;
+    background: url("../images_aashish/img-7.jpeg");
+    background-position-x: 20%;
+    background-position-y: 65%;
+}
+.img-8{
+    grid-area: 7 / 30 / 51 / 40;
+    background: url("../images_aashish/img-8.jpeg");
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-position-y: 65%;
+}
+.eventLink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    color: white;
+}
+
+/* element that contains both image and description */
+.frame div .card_inner{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;       /*8888888888*/
+}
+
+/* image */
+.frame div .card_inner .card_face--front{
+    width: 100%;
+    height: 100%;
+}
+
+.frame div .card_inner .card_face--front a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+/*.card_face card_face--back{
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}*/
+
+/* description */
+
+.frame p{
+  visibility:visible;
+}
+.frame div .card_inner .card_face--back{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -100%;
+    text-align: center;
+    border: none;
+
+} 
+.frame div .card_inner .card_face--back a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.frame div .card_inner .card_face--back a p{
+    font-size: 0.8em;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    margin-top: 12%;
+}
+
+/*Adjust description*/
+.frame .img-1 .card_inner .card_face--back a p,
+.frame .img-2 .card_inner .card_face--back a p,
+.frame .img-3 .card_inner .card_face--back a p,
+.frame .img-4 .card_inner .card_face--back a p,
+.frame .img-5 .card_inner .card_face--back a ,
+.frame .img-8 .card_inner .card_face--back a p{
+    font-size: 1.1em;
+}
+
+/*  Styling for footer  */
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%; 
+    bottom: 0;
+    padding-bottom: 0px;
+  }
+  #footlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footdiv{
+    padding: 12px 100px;
+  }
+  .foothead{
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover{
+    color: orange;
+  }
+  #copyr{
+    clear: left;
+    padding-top: 20px;
+    border-top: 1px solid white;
+    font-size: 12px;
+  }
+  #copyr a{
+    text-decoration: underline;
+  }
+
+/*   CSS for view with minimum width of 600px   */
+
+@media screen and (max-width:600px){
+  .frame{
+    width: 500%;
+    padding:30px 20px 0 0 ;
+    height: 98%;
+    display:contents;
+  }
+  .frame p{
+    visibility:visible;
+  }
+}
